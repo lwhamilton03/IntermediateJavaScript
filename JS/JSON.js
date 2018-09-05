@@ -32,7 +32,7 @@ function practiceJSON()
                     
                     for(random2 in superHeroes.members[random3].powers)
                         {
-                            document.write("<br/>" + superHeroes.members[random3].powers[random2]);
+                            document.write("<br/>" + superHeroes.members[random3].powers[random2] + superHeroes.members[random3].name[random2]);
                             
                         }
                         document.write("<br/>");
