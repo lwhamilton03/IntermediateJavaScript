@@ -10,10 +10,8 @@ function practiceJSON()
 
     requestArb.onload = function () 
         {
-            var superHeroes = requestArb.response; 
-            
-            
-
+            var superHeroes = requestArb.response;          
+ 
             superHeroes = JSON.parse(superHeroes); 
             
            // for(i = 0; i < superHeroes.length; i++)
@@ -28,12 +26,13 @@ function practiceJSON()
                 }
             document.write("<br> Secret Base: " + superHeroes.secretBase + "... TOP SECRET!"); 
             document.write("<br/> The squad formed in " + superHeroes.formed); 
-            
+            document.write("<br/>");
             for(random3 in superHeroes.members)
-                {
+                {   
+                    
                     for(random2 in superHeroes.members[random3].powers)
                         {
-                            document.write("<br/>" + superHeroes.members[random].powers[random2]);
+                            document.write("<br/>" + superHeroes.members[random3].powers[random2]);
                             
                         }
                         document.write("<br/>");
